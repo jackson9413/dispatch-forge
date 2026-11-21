@@ -1,0 +1,13 @@
+# A no-heat call in a rented flat, plus an after-hours lockout.
+# The emergency has to jump the queue and the rest of the day feels it.
+
+[Settings] Day: 2026-11-24 | Shift: 08:00-17:00 | Depot: 900 North Ave | Loc: 39.7817, -89.6501 | Speed: 32 | Buffer: 5m | Late cost: $8
+
+[Resource] Name: Alex Ruiz | Skills: hvac | Shift: 08:00-17:00
+[Resource] Name: Sam Patel | Skills: hvac | Shift: 08:00-17:00
+
+[Job] ID: E1 | Customer: Quinn Apartments | Address: 8 Madison St | Loc: 39.7860, -89.6450 | Window: 08:00-09:00 | Duration: 45m | Skills: hvac | Priority: normal | Revenue: $150 | Phone: 555-0121
+[Job] ID: E2 | Customer: Latimer | Address: 77 Taylor St | Loc: 39.7730, -89.6580 | Window: 09:00-10:30 | Duration: 60m | Skills: hvac | Priority: normal | Revenue: $170 | Phone: 555-0122
+[Job] ID: E3 | Customer: No heat - Reyes | Address: 310 Walnut St | Loc: 39.7790, -89.6510 | Window: 10:00-12:00 | Duration: 90m | Skills: hvac | Priority: emergency | Revenue: $320 | Phone: 555-0123
+[Job] ID: E4 | Customer: Hoyt | Address: 66 Monroe St | Loc: 39.7900, -89.6640 | Window: 12:00-14:00 | Duration: 45m | Skills: hvac | Priority: normal | Revenue: $145 | Phone: 555-0124
+[Job] ID: E5 | Customer: Lockout - Behr | Address: 19 Franklin St | Loc: 39.7690, -89.6720 | Window: 18:00-20:00 | Duration: 45m | Skills: hvac | Priority: high | Revenue: $260 | Phone: 555-0125

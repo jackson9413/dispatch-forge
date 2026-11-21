@@ -1,0 +1,14 @@
+# One tech, one van, far too much work.
+# The planner has to make a decision about what slips.
+
+[Settings] Day: 2026-11-24 | Shift: 08:00-17:00 | Depot: 900 North Ave | Loc: 39.7817, -89.6501 | Speed: 30 | Buffer: 5m | Late cost: $5
+
+[Resource] Name: Dana Cole | Skills: hvac | Shift: 08:00-17:00
+
+[Job] ID: A1 | Customer: Rivera | Address: 12 Oak St | Loc: 39.7890, -89.6400 | Window: 08:00-09:00 | Duration: 60m | Skills: hvac | Priority: high | Revenue: $185 | Phone: 555-0101
+[Job] ID: A2 | Customer: Boone Bakery | Address: 300 Main St | Loc: 39.7760, -89.6600 | Window: 08:30-10:00 | Duration: 90m | Skills: hvac | Priority: normal | Revenue: $240
+[Job] ID: A3 | Customer: Calder Clinic | Address: 44 Grand Ave | Loc: 39.7830, -89.6580 | Window: 09:00-10:00 | Duration: 60m | Skills: hvac | Priority: normal | Revenue: $200
+[Job] ID: A4 | Customer: Devlin | Address: 807 Prairie Rd | Loc: 39.7650, -89.6320 | Window: 09:30-11:00 | Duration: 120m | Skills: hvac | Priority: normal | Revenue: $310
+[Job] ID: A5 | Customer: Okonkwo | Address: 15 Wabash Ave | Loc: 39.7930, -89.6700 | Window: 11:00-12:00 | Duration: 45m | Skills: hvac | Priority: low | Revenue: $150
+[Job] ID: A6 | Customer: Vance | Address: 1200 Ash St | Loc: 39.7710, -89.6860 | Window: 13:00-14:00 | Duration: 90m | Skills: hvac | Priority: normal | Revenue: $220
+[Job] ID: A7 | Customer: Feldman | Address: 61 Church St | Loc: 39.7600, -89.6700 | Window: 14:00-15:00 | Duration: 60m | Skills: hvac | Priority: normal | Revenue: $175

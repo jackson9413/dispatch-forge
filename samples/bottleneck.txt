@@ -1,0 +1,14 @@
+# A service company where only one person is licensed for gas work.
+# The day looks fine until you ask what happens if that person is ill.
+
+[Settings] Day: 2026-11-24 | Shift: 08:00-17:00 | Depot: 900 North Ave | Loc: 39.7817, -89.6501 | Speed: 32 | Buffer: 5m | Late cost: $4
+
+[Resource] Name: Priya Nair | Skills: hvac, gas | Shift: 08:00-17:00
+[Resource] Name: Marcus Lee | Skills: plumbing, electrical | Shift: 08:00-17:00
+
+[Job] ID: G1 | Customer: Halloran | Address: 10 Elm St | Loc: 39.7880, -89.6480 | Window: 09:00-11:00 | Duration: 60m | Skills: gas | Priority: normal | Revenue: $200 | Phone: 555-0131
+[Job] ID: G2 | Customer: Okafor | Address: 42 Clay St | Loc: 39.7780, -89.6560 | Window: 09:30-12:00 | Duration: 90m | Skills: gas | Priority: high | Revenue: $310 | Phone: 555-0132
+[Job] ID: G3 | Customer: Petrov | Address: 77 Vine St | Loc: 39.7720, -89.6480 | Window: 11:00-13:00 | Duration: 60m | Skills: gas | Priority: normal | Revenue: $195 | Phone: 555-0133
+[Job] ID: G4 | Customer: Snyder | Address: 6 Poplar St | Loc: 39.7940, -89.6620 | Window: 12:30-15:00 | Duration: 75m | Skills: gas | Priority: normal | Revenue: $225 | Phone: 555-0134
+[Job] ID: G5 | Customer: Mensah | Address: 21 Union St | Loc: 39.7690, -89.6810 | Window: 13:00-16:00 | Duration: 60m | Skills: plumbing | Priority: normal | Revenue: $180 | Phone: 555-0135
+[Job] ID: G6 | Customer: Duarte | Address: 88 Grand Ave | Loc: 39.7835, -89.6585 | Window: 14:00-16:30 | Duration: 60m | Skills: electrical | Priority: normal | Revenue: $190 | Phone: 555-0136

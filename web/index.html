@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dispatch-forge - field service dispatcher</title>
+<link rel="stylesheet" href="/web/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>dispatch-forge</h1>
+    <p class="tagline">Paste a day of service calls. Get the route, the risks and the score. Local-first: nothing leaves this machine.</p>
+  </div>
+  <div class="topbar-actions">
+    <span id="status" class="status"></span>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="panel panel-brief">
+    <div class="panel-head">
+      <h2>Dispatch brief</h2>
+      <span class="hint">One [Job] per line, plus [Resource] and [Settings]</span>
+    </div>
+
+    <div class="samples" id="samples"></div>
+
+    <label class="field-label" for="brief">Brief</label>
+    <textarea id="brief" spellcheck="false" placeholder="[Job] ID: J1 | Customer: Rivera | Address: 12 Oak St | Window: 09:00-11:00 | Duration: 45m | Skills: hvac | Priority: high"></textarea>
+
+    <div class="controls">
+      <label class="field-label" for="profile">Scoring profile</label>
+      <select id="profile">
+        <option value="general">General</option>
+        <option value="deadline_critical">Deadline critical</option>
+        <option value="cost_conscious">Cost conscious</option>
+        <option value="team_day">Team day</option>
+        <option value="customer_first">Customer first</option>
+      </select>
+      <button id="analyze" class="primary">Plan the day</button>
+      <button id="export-md">Export Markdown</button>
+      <button id="export-csv">Export CSV</button>
+    </div>
+
+    <details class="format-help">
+      <summary>Brief format</summary>
+      <pre>[Settings] Day: 2026-11-24 | Shift: 08:00-17:00 | Depot: 900 North Ave | Loc: 39.7817, -89.6501 | Speed: 32 | Buffer: 5m | Late cost: $3
+
+[Resource] Name: Alex Ruiz | Skills: hvac, electrical | Shift: 08:00-17:00
+
+[Job] ID: J1 | Customer: Rivera | Address: 12 Oak St | Loc: 39.7890, -89.6400 | Window: 09:00-11:00 | Duration: 45m | Skills: hvac | Priority: normal | Revenue: $185 | Phone: 555-0101
+
+[Travel] From: J1 | To: J2 | Minutes: 18</pre>
+      <p class="hint">Coordinates are optional. Without them, or without a [Travel] line, the leg time is assumed and the plan says so.</p>
+    </details>
+
+    <div class="history">
+      <div class="panel-head"><h3>Saved reviews</h3></div>
+      <div id="history"><p class="hint">No saved reviews yet.</p></div>
+    </div>
+  </section>
+
+  <section class="panel panel-results">
+    <div id="results"><p class="hint">Load a sample or paste a brief, then plan the day.</p></div>
+  </section>
+</main>
+
+<div id="overlay" class="overlay hidden">
+  <div class="overlay-box">
+    <div class="panel-head">
+      <h3 id="overlay-title">Export</h3>
+      <button id="overlay-close">Close</button>
+    </div>
+    <pre id="overlay-body"></pre>
+    <button id="overlay-download">Download file</button>
+  </div>
+</div>
+
+<script src="/web/app.js"></script>
+</body>
+</html>

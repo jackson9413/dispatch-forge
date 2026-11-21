@@ -1,0 +1,13 @@
+# A short list from the whiteboard, transcribed by a apprentice.
+# No coordinates and no drive times, so the planner has to assume.
+
+[Settings] Day: 2026-11-24 | Shift: 09:00-17:00 | Speed: 30 | Buffer: 10m
+
+[Resource] Name: Kim | Shift: 09:00-17:00
+[Resource] Name: Lee | Shift: 09:00-17:00
+
+[Job] ID: W1 | Customer: Rivera | Address: 12 Oak St | Window: 10:00-12:00 | Duration: 45m | Priority: normal | Revenue: $185
+[Job] ID: W2 | Customer: Boone | Window: 11:00-13:00 | Duration: 60m | Priority: normal | Revenue: $210
+[Job] ID: W3 | Customer: Calder | Address: 44 Grand Ave | Window: 13:00-15:00 | Priority: high | Revenue: $260
+[Job] ID: W4 | Customer: Devlin | Address: 807 Prairie Rd | Window: 14:00-16:00 | Duration: 90m | Priority: normal | Revenue: $240
+[Job] ID: W5 | Customer: Okonkwo | Address: 15 Wabash Ave | Window: 15:00-17:00 | Duration: 30m | Priority: low | Revenue: $120

@@ -1,0 +1,12 @@
+# A refrigeration job on a crew that only covers HVAC and plumbing.
+# Nothing is broken in the brief, the capability simply is not there.
+
+[Settings] Day: 2026-11-24 | Shift: 08:00-17:00 | Depot: 900 North Ave | Loc: 39.7817, -89.6501 | Speed: 32 | Buffer: 5m
+
+[Resource] Name: Alex Ruiz | Skills: hvac, electrical | Shift: 08:00-17:00
+[Resource] Name: Sam Patel | Skills: plumbing | Shift: 08:00-17:00
+
+[Job] ID: R1 | Customer: Northside Deli | Address: 90 Commerce St | Loc: 39.7800, -89.6460 | Window: 09:00-11:00 | Duration: 90m | Skills: refrigeration | Priority: high | Revenue: $340 | Phone: 555-0111
+[Job] ID: R2 | Customer: Ferris | Address: 22 Belmont | Loc: 39.7870, -89.6560 | Window: 10:00-12:00 | Duration: 45m | Skills: hvac | Priority: normal | Revenue: $160 | Phone: 555-0112
+[Job] ID: R3 | Customer: Gonzalez | Address: 5 Hill St | Loc: 39.7740, -89.6440 | Window: 11:00-13:00 | Duration: 60m | Skills: hvac | Priority: normal | Revenue: $190 | Phone: 555-0113
+[Job] ID: R4 | Customer: Iyer | Address: 340 Park Ave | Loc: 39.7910, -89.6700 | Window: 13:00-15:00 | Duration: 60m | Skills: refrigeration | Priority: normal | Revenue: $290 | Phone: 555-0114
